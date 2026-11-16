@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f5;
+    color: #333;
+    direction: rtl; /* מוודא שהתפריט והטקסט מיושרים נכון לעברית */
+}
+
+/* --- תפריט ניווט עליון --- */
+nav {
+    background-color: #174b70;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* --- תוכן מרכזי (עמודים פנימיים) --- */
+main {
+    background-color: white;
+    width: 70%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+main h1 {
+    color: #174b70;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.8;
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* --- טופס צור קשר --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #174b70;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #236b9b;
+}
+
+/* --- עיצוב כרטיס הספר (במידה ומופיע בדף הבית) --- */
+.main-frame {
+    background-color: white;
+    width: 430px;
+    padding: 12px;
+    margin: 40px auto; /* ממרכז את המסגרת בלי לפגוע בתפריט העליון */
+}
+
+.content {
+    background-color: #dce5ed;
+    min-height: 408px;
+    text-align: center;
+    padding: 20px;
+    color: #174b70;
+}
+
+.content h1 {
+    font-size: 19px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.book {
+    width: 120px;
+    height: 178px;
+    background-color: white;
+    margin: 0 auto;
+    color: black;
+    box-shadow: 0 2px 5px #aaa;
+    direction: ltr; /* שומר על כיווניות הספר אם הכיתוב בו באנגלית */
+}
+
+.book-top {
+    height: 30px;
+    padding: 5px;
+    font-size: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-top span {
+    background-color: #333;
+    color: white;
+    padding: 3px;
+}
+
+.book-title {
+    font-size: 19px;
+    padding: 8px 0;
+    line-height: 22px;
+}
+
+.book-bottom {
+    background-color: #ffdf32;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-bottom span {
+    writing-mode: vertical-rl;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.book-bottom strong {
+    font-size: 85px;
+}
+
+.content h2 {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 38px;
+}
+
+.content p {
+    font-size: 11px;
+    color: #555;
+    line-height: 17px;
+    margin-bottom: 35px;
+}
+
+footer {
+    font-size: 12px;
+    font-weight: bold;
+}
